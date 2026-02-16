@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Vue</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Basic functionality of Vue and its advantages</h2>
+				<img data-src="https://pbs.twimg.com/media/F1A9TktWABMGaBq?format=jpg&name=4096x4096" alt="vue">
+				<style>
+					img {
+						width: 300px;
+						background-color: black;
+					}
+				</style>
+			</section>
+
+			<section>
+				<h2>History and Overview</h2>
+				<ul>
+					<li>Сreated by Evan You</li>
+					<li>Last release: September 2025 — 3.5</li>
+
+				</ul>
+			</section>
+
+			<section>
+				<h2>Components</h2>
+				<ul>
+					<li>A component is a self-contained UI unit that combines template, logic, and styles.</li>
+					<li>Each component encapsulates its own state and behavior, which simplifies maintenance and reuse</li>
+					<li>Components also make testing and team collaboration easier: different developers can work on different
+						components in parallel</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Reactivity</h2>
+				<ul>
+					<li>Automatic data tracking and DOM updating</li>
+					<li>Declarative approach: describe the UI's dependencies on state</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Templates and Transitions</h2>
+				<ul>
+					<li>HTML-based templates: valid HTML parsed by browsers; compiled to virtual DOM render functions</li>
+					<li>Virtual DOM + reactivity: computes minimal component updates and DOM changes</li>
+					<li>Template binding: declaratively binds rendered DOM to component data</li>
+					<li>Vue provides a variety of ways to apply transition effects</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Conditional Rendering</h2>
+				<ul>
+					<li>v-if / v-else / v-else-if</li>
+					<li>v-show</li>
+					<li>v-for</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Components</h2>
+				<ul>
+					<li>Props</li>
+					<li>$emit</li>
+					<li>One-way data flow</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Slots and scoped slots</h2>
+				<ul>
+					<li>Slots allow embedding arbitrary content into a component</li>
+					<li>Named slot</li>
+					<li>Scoped slots</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Options API vs Composition API</h2>
+				<ul>
+					<li>Options API: data, methods, computed, watch</li>
+					<li>Composition API: setup, ref, reactive</li>
+				</ul>
+			</section>
+
+
+
+			<section>
+				<h2>Router and Pinia</h2>
+				<ul>
+					<li>Vue Router: routing, lazy load, guards</li>
+					<li>Pinia: replacing Vuex, modular</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Vite and CLI</h2>
+				<ul>
+					<li>Vite — provides very fast cold starts and HMR</li>
+					<li>Vue CLI was used previously, but Vite is now preferred</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Performance and Optimization</h2>
+				<ul>
+					<li>Optimization tips</li>
+					<li>Vue 3 has improved tree‑shaking support</li>
+
+				</ul>
+			</section>
+
+			<section>
+				<h2>Testing and DevTools</h2>
+				<ul>
+					<li>Vue Test Utils + Jest/Vitest</li>
+					<li>E2E: Cypress / Playwright</li>
+					<li>Vue Devtools</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Advantages of Vue</h2>
+				<ul>
+					<li>Low learning curve and fast onboarding</li>
+					<li>Progressive adoption</li>
+					<li>Clean component architecture</li>
+					<li>High performance</li>
+				</ul>
+			</section>
+
+
+
+			<section>
+				<h2>In summary</h2>
+				<ul>
+					<li>Vue combines simplicity, a powerful reactivity model, and a flexible component architecture</li>
+				</ul>
+			</section>
+
+						<section>
+				<h2>Thank you all for your attention!</h2>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			showHiddenSlides: true,
+
+			slideNumber: 'c/t',
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
